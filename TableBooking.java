@@ -4,9 +4,9 @@ public class TableBooking {
 
     static int[][] tableView = new int[12][7];
 
-    static String[] timeSlots = new String[] { "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00",
-            "15:00-16:00", "16:00-17:00", "17:00-18:00", "18:00-19:00", "19:00-20:00", "20:00-21:00", "21:00-22:00",
-            "22:00-23:00" };
+    static String[] timeSlots = new String[] { "11:00am-12:00pm", "12:00pm-1:00pm", "1:00pm-2:00pm", "2:00pm-3:00pm",
+            "3:00pm-4:00pm", "4:00pm-5:00pm", "5:00pm-6:00pm", "6:00pm-7:00pm", "7:00pm-8:00pm", "8:00pm-9:00pm", "9:00pm-10:00pm",
+            "10:00pm-11:00pm" };
 
     static void displayTimeSlots() {
         System.out.println("********************TIME SLOTS********************\n");
