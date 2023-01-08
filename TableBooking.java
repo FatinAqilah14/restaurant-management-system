@@ -9,7 +9,7 @@ public class TableBooking {
             "10:00pm-11:00pm" };
 
     static void displayTimeSlots() {
-        System.out.println("Try Test ********************TIME SLOTS********************\n");
+        System.out.println("Try Test 123 ********************TIME SLOTS********************\n");
         for (int i = 0; i < 12; i++) {
             System.out.println(i + 1 + ". " + timeSlots[i]);
         }
