@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         int x, y;
         System.out.println("Hi Guys, Restaurant To Our Welcome, Tipu je Welcome To Our Restaurant hehe");
+
         try (Scanner s = new Scanner(System.in)) {
             do {
                 System.out.println("\n\n********************OPTIONS********************");
