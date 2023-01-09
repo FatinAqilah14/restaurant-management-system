@@ -29,9 +29,9 @@ public class Customer {
         Statistics.addCustomer(this);
     }
 
-    void updateOrderDetails(int option) {
-        String foodItem = Menu.items[option - 1];
-        double foodPrice = Menu.prices[option - 1];
+    void updateOrderDetails(int option,int Total) {
+        String foodItem =  Menu.items[option - 1];
+        double foodPrice = Total * Menu.prices[option - 1];
         Menu m = new Menu(foodItem, foodPrice);
         orders[items] = m;
         order_amt += foodPrice;

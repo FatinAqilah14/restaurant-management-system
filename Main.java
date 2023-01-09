@@ -70,11 +70,13 @@ public class Main {
                         id = s.nextInt();
                         if (Statistics.isValidCustomer(id)) {
                             Customer c = Statistics.getCustomer(id);
-                            int food, choose;
+                            int food, choose,total;
                             Menu.displayMenu();
                             System.out.print("Enter your Choice(1-18): ");
                             food = s.nextInt();
-                            c.updateOrderDetails(food);
+                            System.out.print("Total: ");
+                            total = s.nextInt();
+                            c.updateOrderDetails(food,total);
                             do {
                                 System.out.print("Do You Want To Order More(0/1): ");
                                 choose = s.nextInt();
@@ -82,7 +84,9 @@ public class Main {
                                     break;
                                 System.out.print("Enter your Choice(1-18): ");
                                 food = s.nextInt();
-                                c.updateOrderDetails(food);
+                                System.out.print("Total: ");
+                                total = s.nextInt();
+                                c.updateOrderDetails(food,total);
                             } while (choose != 0);
                         } else {
                             System.out.println("Invalid Customer ID");
