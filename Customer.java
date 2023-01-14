@@ -57,8 +57,10 @@ public class Customer {
         System.out.println("Date: " + date);
         System.out.println("Table No: " + table_no);
         System.out.println("Time: " + time_slot);
-        System.out.println("Total Amount: " + order_amt);
+        // System.out.println("Total Amount: " + order_amt);
         this.displayOrderDetails();
+        System.out.println();
+        System.out.println("Total Amount: " + order_amt);
         System.out.println("\n********************************************************");
     }
 }
