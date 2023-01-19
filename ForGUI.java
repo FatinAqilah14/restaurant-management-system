@@ -5,4 +5,5 @@ public class ForGUI {
     private JTextField tfLastName;
     private JButton btnOK;
     private JButton btnClear;
+    private JLabel lbWelcome;
 }
