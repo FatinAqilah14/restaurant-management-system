@@ -2,8 +2,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static javax.swing.JOptionPane.*;
-
 public class ForGUI extends JFrame {
     private JTextField username;
     private JTextField password;
@@ -32,8 +30,10 @@ public class ForGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (username.getText().equals("") && password.getText().equals(""))
             {
-                showMessageDialog("Blank is not allowed");
+                JOptionPane.showMessageDialog(ForGUI.this, "Email or Password Invalid", "Try again", JOptionPane.ERROR_MESSAGE);
             }
+                else
+                    dispose();
             }
         });
 
@@ -44,9 +44,6 @@ public class ForGUI extends JFrame {
                 password.setText("");
             }
         });
-    }
-
-    private void showMessageDialog(String blank_is_not_allowed) {
     }
 
 
