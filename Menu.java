@@ -7,18 +7,18 @@ public class Menu {
         price = p;
     }
 
-    static String[] items = new String[] { "Chilli Chicken", "Mutton Biriyani", "Chicken Biriyani", "Kashmiri Polao",
-            "Fried Rice", "Mixed Fried Rice", "Paneer Fried Rice", "Veg Noodles", "Chicken Noodles", "Chicken tikka",
-            "Chicken lollipop(8pics)", "Afgani Chicken", "Golabari Mutton", "Paneer Chili", " Sahi Paneer",
-            "Paneer Postho", "Dudh Paneer", "Alu Postho", };
-    static double[] prices = new double[] { 210.0, 350.0, 250.89, 200, 180.69, 240.69, 190.69, 110.69, 150.69, 165.69,
-            170.69, 280.69, 320.69, 100, 300.67, 200.69, 100.12, 230.56, 300 };
+    static String[] items = new String[] { "Nasi Ayam", "Nasi Goreng", "Mi Goreng", "Kuey Tiau Goreng",
+            "Nasi Kerabu","Nasi Kukus", "Nasi Dagang", "Laksa", "Lontong", "Laksam", "Satay Ayam", "Satay Daging",
+            "Satay Ikan", "Mi Kari", "Tomyam", "Roti Canai",
+            "Roti Boom", "Roti Nan Cheese"  };
+    static double[] prices = new double[] { 8.00, 7.00, 6.50, 7.00, 10.00, 9.00, 8.50, 6.00, 7.50, 6.80,
+            2.00, 2.50, 3.00, 6.30, 7.90, 2.20, 2.30, 3.50 };
 
     static void displayMenu() {
         int len = items.length;
         System.out.println("********************MENU********************\n");
         for (int i = 0; i < len; i++) {
-            System.out.println((i + 1) + ". " + items[i] + " --------------------- Rs." + prices[i]);
+            System.out.println((i + 1) + ". " + items[i] + " --------------------- RM" + prices[i]);
         }
         System.out.println("\n********************************************");
     }

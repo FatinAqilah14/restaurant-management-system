@@ -45,7 +45,7 @@ public class Customer {
         }
         System.out.println("All Orders: ");
         for (int i = 0; i < items; i++) {
-            System.out.println(i + 1 + ". " + orders[i].foodItem + " --------------------- Rs." + orders[i].price);
+            System.out.println(i + 1 + ". " + orders[i].foodItem + " --------------------- RM" + orders[i].price);
         }
     }
 
@@ -60,7 +60,7 @@ public class Customer {
         // System.out.println("Total Amount: " + order_amt);
         this.displayOrderDetails();
         System.out.println();
-        System.out.println("Total Amount: " + order_amt);
+        System.out.println("Total Amount: RM" + order_amt);
         System.out.println("\n********************************************************");
     }
 }
